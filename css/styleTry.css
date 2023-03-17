@@ -1,0 +1,540 @@
+* {
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.active {
+  color: #E08958;
+}
+
+.orange {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -10;
+  width: 50vw;
+  height: 110vh;
+}
+
+header nav {
+  padding: 1rem 3rem;
+  width: 100%;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+header nav ul li {
+  font-size: 2.5rem;
+}
+header nav ul li a {
+  color: black;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.indexLeft {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+main section.indexLeft div.pic {
+  min-width: 20vw;
+  height: 60vh;
+  border-radius: 500px;
+  overflow: hidden;
+}
+main section.indexLeft div.pic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.indexLeft div.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main section.indexLeft div.title h2 {
+  color: white;
+  margin-top: -4rem;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  background-color: #E08958;
+  border-radius: 500px;
+}
+main section.indexRight {
+  flex: 1 1 500px;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 4rem;
+}
+main section.indexRight h1 {
+  margin-top: 3rem;
+  font-size: 4.5rem;
+  color: #E08958;
+  font-weight: 900;
+}
+main section.indexRight p {
+  margin-top: 3rem;
+  margin-right: 5rem;
+  padding-right: 5rem;
+  font-size: 2rem;
+}
+main section.indexRight .circle {
+  position: absolute;
+  top: 7vh;
+  right: -10vh;
+  width: 30rem;
+  height: 30rem;
+  background-color: #E08958;
+  opacity: 0.72;
+  z-index: -3;
+  border-radius: 50%;
+}
+main section.contentLeft {
+  flex: 3 1 400px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-size: 25px;
+}
+main section.contentLeft div.top {
+  display: flex;
+  flex-direction: row-reverse;
+}
+main section.contentLeft div.top div.resumeIcon {
+  width: 100px;
+  height: 130px;
+  margin: 0 1rem;
+}
+main section.contentLeft div.top div.resumeIcon img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.contentLeft div.top div.resumeText {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: flex-end;
+  width: 80%;
+}
+main section.contentLeft div.top div.resumeText h2 {
+  font-size: 40px;
+}
+main section.contentLeft div.bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3rem;
+  width: 100%;
+}
+main section.contentLeft div.bottom div.resumeIcon {
+  border-radius: 1px solid;
+  width: 100px;
+  height: 130px;
+  margin: 0 1rem;
+}
+main section.contentLeft div.bottom div.resumeIcon img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.contentLeft div.bottom div.resumeText {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 80%;
+}
+main section.contentLeft div.bottom div.resumeText h2 {
+  font-size: 40px;
+}
+main section.contentLeft div.bottom div.resumeText p {
+  text-align: justify;
+  font-size: 20px;
+}
+main section.resumePic {
+  flex: 1 1 200px;
+  height: 50vh;
+  border-radius: 500px;
+  overflow: hidden;
+}
+main section.resumePic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.contentRight {
+  flex: 3 1 400px;
+  margin: 0rem 4rem;
+}
+main section.contentRight div.top {
+  display: flex;
+}
+main section.contentRight div.top div.resumeIcon {
+  width: 100px;
+  height: 130px;
+  margin: 0 1rem;
+}
+main section.contentRight div.top div.resumeIcon img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.contentRight div.top div.resumeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 80%;
+}
+main section.contentRight div.top div.resumeText h2 {
+  font-size: 40px;
+}
+main section.contentRight div.top div.resumeText div.photos img {
+  width: 5rem;
+}
+main section.contentRight div.bottom {
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+}
+main section.contentRight div.bottom div.resumeIcon {
+  border-radius: 1px solid;
+  width: 100px;
+  height: 130px;
+  margin: 0 1rem;
+}
+main section.contentRight div.bottom div.resumeIcon img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.contentRight div.bottom div.resumeText {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+main section.contentRight div.bottom div.resumeText h2 {
+  font-size: 40px;
+}
+main section.contentRight div.bottom div.resumeText p {
+  text-align: justify;
+  font-size: 20px;
+}
+main section.form {
+  flex: 1 1 600px;
+}
+main section.form form {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+main section.form form div {
+  padding: 0 5rem;
+}
+main section.form form div label {
+  font-size: 1.5rem;
+}
+main section.form form div input {
+  background-color: #E08958;
+  border: 0px;
+  color: white;
+  font-size: 1.25rem;
+  width: 80%;
+  padding: 0.5rem 0.25rem;
+}
+main section.form form div textarea {
+  background-color: #E08958;
+  border: 0px;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.25rem;
+  width: 80%;
+  height: 30vh;
+  vertical-align: top;
+}
+main section.form form button {
+  align-self: center;
+  padding: 0.5rem 2rem;
+  border: 0px;
+  background-color: #E08958;
+  color: white;
+  cursor: pointer;
+}
+main div.line {
+  background-color: gray;
+  width: 5px;
+}
+main section.contact {
+  flex: 1 1 500px;
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+main section.contact h2 {
+  font-size: 2rem;
+}
+
+main.resume {
+  height: 70vh;
+  align-items: center;
+}
+
+footer {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+footer a {
+  margin: 0rem 0.5rem;
+}
+footer a img {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media screen and (max-width: 1270px) {
+  main.resume {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .orange {
+    opacity: 0.4;
+  }
+  header nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0;
+    border-bottom: 1.5px solid grey;
+  }
+  main section.indexRight {
+    padding: 2rem;
+  }
+  main section.indexRight p {
+    margin-top: 3rem;
+    margin-right: 0rem;
+    padding-right: 0rem;
+    font-size: 2rem;
+  }
+  main section.indexRight .circle {
+    right: -10vh;
+    width: 30rem;
+    height: 30rem;
+    opacity: 0.32;
+  }
+  main section.picture {
+    display: flex;
+    justify-content: center;
+  }
+  main section.picture img {
+    width: 40vw;
+    height: 80vh;
+  }
+  main section.picture .orangeRact {
+    display: none;
+  }
+  main section.contact {
+    margin-left: 3rem;
+    font-size: 0.85rem;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  footer a {
+    margin: 0;
+    padding: 1rem;
+  }
+  main.resume section.resumePic {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  main section.contentLeft div p {
+    font-size: 25px;
+  }
+  main section.resumePic {
+    display: none;
+  }
+  main section.contentRight div p {
+    font-size: 25px;
+  }
+  main section.picture img {
+    width: 50vw;
+    height: 60vh;
+  }
+  main section.picture .orangeRact {
+    display: none;
+  }
+  main section.contact {
+    margin-left: 3rem;
+    font-size: 0.85rem;
+  }
+  footer {
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  main section.indexLeft div.title h2 {
+    font-size: 1rem;
+  }
+  main section.indexRight {
+    display: flex;
+    flex-direction: column;
+  }
+  main section.indexRight h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: #E08958;
+    font-weight: 900;
+  }
+  main section.indexRight p {
+    font-size: 1.5rem;
+  }
+  main section.indexRight {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.indexRight p {
+    padding: 0;
+    margin: 2rem;
+  }
+  main section.indexRight div.circle {
+    width: 20rem;
+    height: 20rem;
+    opacity: 0.33;
+  }
+  main section.picture {
+    display: flex;
+    justify-content: center;
+  }
+  main section.picture img {
+    width: 80vw;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section.picture .orangeRact {
+    display: none;
+  }
+  main section.contact {
+    margin-left: 3rem;
+    font-size: 0.85rem;
+  }
+  main section.form form div {
+    padding: 0;
+  }
+  main section.contact {
+    margin-left: 0rem;
+    padding: 0 1rem;
+  }
+  main.resume section.contentLeft div.top {
+    flex-direction: column;
+    align-items: center;
+  }
+  main.resume section.contentLeft div.top div.resumeIcon {
+    margin: 0;
+    width: 25vw;
+  }
+  main.resume section.contentLeft div.top div.resumeText {
+    text-align: center;
+  }
+  main.resume section.contentLeft div.top div.resumeText h2 {
+    font-size: 20px;
+  }
+  main.resume section.contentLeft div.top div.resumeText p {
+    font-size: 15px;
+  }
+  main.resume section.contentLeft div.bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  main.resume section.contentLeft div.bottom div.resumeIcon {
+    margin: 0;
+    width: 25vw;
+  }
+  main.resume section.contentLeft div.bottom div.resumeText {
+    align-items: center;
+  }
+  main.resume section.contentLeft div.bottom div.resumeText h2 {
+    font-size: 20px;
+  }
+  main.resume section.contentLeft div.bottom div.resumeText p {
+    text-align: justify;
+    font-size: 15px;
+  }
+  main.resume section.contentRight div.top {
+    flex-direction: column;
+    align-items: center;
+  }
+  main.resume section.contentRight div.top div.resumeIcon {
+    margin: 0;
+    width: 25vw;
+  }
+  main.resume section.contentRight div.top div.resumeText {
+    text-align: center;
+  }
+  main.resume section.contentRight div.top div.resumeText h2 {
+    font-size: 20px;
+  }
+  main.resume section.contentRight div.top div.resumeText div.photos img {
+    width: 3rem;
+  }
+  main.resume section.contentRight div.bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  main.resume section.contentRight div.bottom div.resumeIcon {
+    margin: 0;
+    width: 25vw;
+  }
+  main.resume section.contentRight div.bottom div.resumeText {
+    align-items: center;
+  }
+  main.resume section.contentRight div.bottom div.resumeText h2 {
+    font-size: 20px;
+  }
+  main.resume section.contentRight div.bottom div.resumeText p {
+    text-align: justify;
+    font-size: 15px;
+  }
+  main.resume section.resumePic {
+    display: none;
+  }
+  main.resume section.contentRight div p {
+    font-size: 25px;
+  }
+  footer {
+    padding: 3rem 0;
+  }
+}/*# sourceMappingURL=styleTry.css.map */
